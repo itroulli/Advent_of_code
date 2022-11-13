@@ -1,0 +1,13 @@
+from itertools import combinations
+
+with open("inputs/day_02.txt") as text:
+    input_text = text.readlines()
+
+total = 0 
+
+for package in input_text:
+    size = list(map(int, package.split("x")))
+    package_areas = [2*x*y for x,y in combinations(size, 2)]
+    total += sum(package_areas) + min(package_areas)//2
+    
+print(total)
