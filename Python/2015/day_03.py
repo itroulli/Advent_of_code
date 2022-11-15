@@ -34,6 +34,6 @@ def solve_day3(part_two=False):
         print(f"Answer for part 1: {len(at_least_one)}")
 
 
-if __file__ == "__main__":
+if __name__ == "__main__":
     solve_day3()
     solve_day3(part_two=True)
