@@ -1,8 +1,11 @@
+import os
 from collections import Counter
 
+PARENT_DIR = os.path.join(os.cwd(), os.pardir)
+INPUT = os.path.join(PARENT_DIR, "inputs", "day_01.txt")
 
 def solve_day1(part_two=False):
-    with open("inputs/day_01.txt") as text:
+    with open(INPUT) as text:
         input_text = text.read()
 
     if part_two:

@@ -1,5 +1,10 @@
+import os
 from itertools import combinations
 from operator import mul
+
+
+PARENT_DIR = os.path.join(os.cwd(), os.pardir)
+INPUT = os.path.join(PARENT_DIR, "inputs", "day_02.txt")
 
 
 def solve_day2():

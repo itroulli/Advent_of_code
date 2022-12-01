@@ -1,5 +1,8 @@
+import os
 import re
 
+PARENT_DIR = os.path.join(os.cwd(), os.pardir)
+INPUT = os.path.join(PARENT_DIR, "inputs", "day_06.txt")
 
 with open("inputs/day_06.txt", encoding="utf-8") as f:
     instructions = f.readlines()

@@ -1,6 +1,11 @@
 """ --- Day 5: Doesn't He Have Intern-Elves For This? --- """
+import os
 import sys
 from itertools import groupby
+
+
+PARENT_DIR = os.path.join(os.cwd(), os.pardir)
+INPUT = os.path.join(PARENT_DIR, "inputs", "day_05.txt")
 
 
 def rules_through(funcs, x):

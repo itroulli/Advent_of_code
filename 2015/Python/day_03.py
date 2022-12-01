@@ -1,3 +1,10 @@
+import os
+
+
+PARENT_DIR = os.path.join(os.cwd(), os.pardir)
+INPUT = os.path.join(PARENT_DIR, "inputs", "day_03.txt")
+
+
 def move(cmd: str, pos: tuple):
     commands = {"^": (0, 1), ">": (1, 0), "v": (0, -1), "<": (-1, 0)}
     return tuple(sum(x) for x in zip(commands[cmd], pos))
