@@ -11,7 +11,6 @@ def solve_day3(part_two=False):
         robo_pos = (0, 0)
         visited = set([pos])
         robo_turn = False
-        print(visited)
         for c in input_text:
             if robo_turn:
                 robo_pos = move(c, robo_pos)
