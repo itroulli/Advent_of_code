@@ -1,7 +1,7 @@
 import os
 from itertools import groupby
 
-PARENT_DIR = os.path.join(os.cwd(), os.pardir)
+PARENT_DIR = os.path.join(os.getcwd(), os.pardir)
 INPUT = os.path.join(PARENT_DIR, "inputs", "day_01.txt")
 
 
